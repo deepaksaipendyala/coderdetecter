@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Deepak sai</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+		<link rel="shortcut icon" href="{{url_for('static',filename='favicon.ico')}}">
+		<noscript><link rel="stylesheet" href="/static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">My works</a>
+				<nav>
+					<ul>
+						<li><a href="https://deepaksai.pythonanywhere.com/">Home</a></li>
+						<li><a href="#" class="active">Projects</a></li>
+						<li><a href="https://github.com/deepaksaipendyala">Github Profile</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Project code detector</h1>
+
+							<!-- Text -->
+								<section>
+									<p>A program to compare two python files on internet. It uses a library called difflib. python flask is the back-end scripting language</p>
+									<hr />
+
+							<!-- Form -->
+								<section>
+									<h2>Compare code </h2>
+									<form method="post" action="/submit_form">
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall">
+											</div>
+											<div class="col-12">
+												<textarea name="code1" id="code1" placeholder="Enter your code 1" rows="6"></textarea>
+											</div>
+                      											<div class="col-12">
+												<textarea name="code2" id="code2" placeholder="Enter your code 2" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" value="compare" class="primary" /></li>
+													<li><input type="reset" value="Reset" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</section>
+									<h3>Instructions</h3>
+									<blockquote> Each line of a Differ delta begins with a two-letter code:  <br>
+
+        '- '    line unique to code 1  <br>
+
+        '+ '    line unique to code 2  <br>
+
+        '  '    line common to both codes  <br>
+
+        '? '    line not present in either input codes 
+ </blockquote>                
+									<h2>Result</h2>
+                  <h3>{{r}}</h3>
+									<pre><code><br>{{c}}</code></pre>
+								</section>
+
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Deepak sai pendyala. All rights reserved.</li><li>Designed with HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+
+		<!-- Scripts -->
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/static/assets/js/browser.min.js"></script>
+			<script src="/static/assets/js/breakpoints.min.js"></script>
+			<script src="/static/assets/js/util.js"></script>
+			<script src="/static/assets/js/main.js"></script>
+
+	</body>
+</html>
