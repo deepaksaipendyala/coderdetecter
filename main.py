@@ -1,5 +1,5 @@
 from flask import Flask,render_template,request
-from difflib import SequenceMatcher, Differ
+
 d = Differ()
 app = Flask('app')
 
